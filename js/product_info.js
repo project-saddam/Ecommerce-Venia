@@ -22,8 +22,7 @@
     
     plus.addEventListener("click", function (e) {
         e.target
-        e.preventDefault();
-        debugger;
+        e.preventDefault();       
         // Get the field name
         let fieldName =document.getElementById("plus").getAttribute("data-field");  
         // Get its current value
@@ -80,8 +79,7 @@
         document.getElementsByClassName("counts")[0].innerText=product.rating.count
         
      });
-     addtoCart.addEventListener("click", function (e) {
-        debugger;
+     addtoCart.addEventListener("click", function (e) {       
         var getcartValue=document.getElementById("quantity").value
         document.getElementsByClassName('cartvalue')[0].innerText=getcartValue
       });
