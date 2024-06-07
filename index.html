@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VENIA</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div role="header" id="header" class="container container-header">
+        <!-- Navigation section -->
+        <div id="menu">
+        
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Smart&nbsp;Gear</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+          </label>
+        </div>
+        <!-- Ecommerce Logo -->
+        <div id="shopName"><a href="javascript:void(0)"> V E N I A</a></div>
+        <!-- Navigation Links -->
+        <div id="collection" class="navbar">
+          <a href="index.html" class="active"> Home </a>
+          <a href="javascript:void(0)"> Women </a>
+          <a href="javascript:void(0)"> Men </a>
+          <a href="javascript:void(0)"> Smart&nbsp;Gear </a>
+          <a href="javascript:void(0)"> Accessories </a>
+        </div>
+        <!-- item search box -->
+        <div id="search">
+          <i class="fas fa-search search"></i>
+          <input
+            type="text"
+            id="search-products"
+            name="searchBox"
+            placeholder="Search your products"
+          />
+        </div>
+        <!--cart item -->
+        <div id="user">
+          <a href="javascript:void(0)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-icon-Dp3"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cartCircle"><text>0</text></span>
+            </a>            
+        </div>
+      </div>
+    </header>
+
+    <!-- Product banner section -->
+    <div role="banner" class="banner-container">
+      <div class="card text-card">
+        <h2>
+          Men's <br />
+          Outerwear
+        </h2>
+      </div>
+      <div class="card image-card">
+        <img src="img/mens-banner.png" alt="Men's Outerwear Banner" />
+      </div>
+    </div>
+
+    <!-- Product container -->
+    <main>
+      <div class="container-index">
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+          <a href="javascript:void(0)">Clothing</a> /
+          <a href="javascript:void(0)">Women's</a> /
+          <span class="selected">Outerwear</span>
+        </div>
+
+        <!-- Sort by category -->
+        <div class="results-text"></div>
+        <div class="sort-catergory">
+          <select name="sort-by-price" id="sort-by-price">
+            <option value="">Sort by Price</option>
+            <option value="l2h">Price - Low to High</option>
+            <option value="h2l">Price - High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Product filtes -->
+        <aside class="filters">
+          <h3>Filters</h3>
+          <hr />
+          <h4>Categories</h4>
+          <div class="categories">
+            <input
+              class="category"
+              type="checkbox"
+              id="category1"
+              name="category1"
+              value="jewelery"
+            />
+            <label for="category1"> Jewelery</label><br />
+            <input
+              class="category"
+              type="checkbox"
+              id="category2"
+              name="category2"
+              value="electronics"
+            />
+            <label for="category2"> Electronics</label><br />
+            <input
+              class="category"
+              type="checkbox"
+              id="category3"
+              name="category3"
+              value="men's clothing"
+            />
+            <label for="category3"> Men's Clothing</label><br />
+            <input
+              class="category"
+              type="checkbox"
+              id="category4"
+              name="category4"
+              value="women's clothing"
+            />
+            <label for="category4"> Women's Clothing</label><br /><br />
+            <br />
+          </div>
+          <hr />
+        </aside>
+
+        <!-- main products display srea -->
+        <section class="productsSection">
+         
+        </section>
+      </div>
+      <div  id="load-more">
+        <div id="pagination">
+          <a href="#" class="blocks" >&laquo;</a>
+          <a href="#" class="blocks active">1</a>
+          <a href="#" class="blocks" >2</a>             
+          <a href="#" class="blocks">&raquo;</a>
+        </div>
+      </div>
+      
+     
+    </main>
+
+    <!-- footer area -->
+    <footer>
+      <section>
+        <div class="container container-footer">
+          <!-- Footer Sections -->
+          <div class="webFooter">
+            <h3>Account</h3>
+            <p>Sign In</p>
+            <p>Register</p>
+            <p>Order Status</p>
+          </div>
+          <div class="webFooter">
+            <h3>About us</h3>
+            <p>Our Story</p>
+            <p>Careers</p>
+          </div>
+          <div class="webFooter">
+            <h3>Help</h3>
+            <p>Contact Us</p>
+            <p>Order Status</p>
+            <p>Returns</p>
+          </div>
+          <div class="webFooter">
+            <h3>Follow Us!</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div class="footer-social-media">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- main footer -->
+        <div
+          id="footerItem"
+          class="container container-footer container-footer-credit"
+        >
+          <div class="logo">
+            <h3>V E N I A</h3>
+          </div>
+          <div class="c-address">
+            © Company Name Address Ave, City Name, State ZIP
+          </div>
+          <div class="company-terms">
+            <a href="javascript:void(0)"> Terms of Use </a>
+            <a href="javascript:void(0)">Privacy Policy</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- scripts  -->
+    <script type="module" src="js/main.js" ></script>
+    <script type="module" src="js/productAPI.js" ></script>
+  </body>
+</html>
